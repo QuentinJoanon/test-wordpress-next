@@ -15,6 +15,7 @@
 function mon_plugin_menu() {
     add_menu_page('Annuaire', 'Annuaire', 'manage_options', 'afficher-clients', 'afficher_liste_clients');
     add_submenu_page('afficher-clients', 'Ajouter un client', 'Ajouter un client', 'manage_options', 'ajouter-client', 'afficher_page_fiches_clients');
+    add_submenu_page('afficher-clients', 'Modifier un client', 'Modifier un client', 'manage_options', 'modifier-client', 'afficher_page_modification_client');
 }
 
 function afficher_page_fiches_clients() {
@@ -147,6 +148,22 @@ function afficher_page_fiches_clients() {
             <input type="submit" name="ajouter_client" value="Ajouter Client">
         </form>
     </div>
+    <script>
+        const multiSelectWithoutCtrl = ( elemSelector ) => {
+            let options = [].slice.call(document.querySelectorAll(`${elemSelector} option`));
+            options.forEach(function (element) {
+                element.addEventListener("mousedown", 
+                    function (e) {
+                        e.preventDefault();
+                        element.parentElement.focus();
+                        this.selected = !this.selected;
+                        return false;
+                    }, false );
+            });
+            }
+
+multiSelectWithoutCtrl('#categories_existantes')
+    </script>
     <?php
     }
 
@@ -189,6 +206,7 @@ function afficher_liste_clients() {
             }
                         
             // Ajouter les boutons d'édition et de suppression
+            echo '<a href="' . admin_url('admin.php?page=modifier-client&client_id=' . get_the_ID()) . '" class="button button-primary">Modifier</a>';
             echo '<br><a href="#" class="button button-danger supprimer-client" data-client-id="' . get_the_ID() . '">Supprimer</a>';
             
             // Ajouter l'appel à la fonction supprimer_client()
@@ -259,6 +277,168 @@ function enregistrer_taxonomy_client() {
 
     register_taxonomy('categorie_client', 'fiche_client', $args); // 'fiche_client' est le type de publication personnalisé auquel vous souhaitez attacher la taxonomie.
 }
+
+function afficher_page_modification_client() {
+    if (isset($_GET['client_id']) && is_numeric($_GET['client_id'])) {
+        $client_id = intval($_GET['client_id']);
+        $client = get_post($client_id);
+
+        if ($client && $client->post_type === 'fiche_client') {
+
+                if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['modifier_client'])) {
+                    // Récupérer les données du formulaire
+                    $raison_sociale = sanitize_text_field($_POST['raison_sociale']);
+                    $dirigeant = sanitize_text_field($_POST['dirigeant']);
+                    $adresse = sanitize_text_field($_POST['adresse']);
+                    $phone = sanitize_text_field($_POST['phone']);
+                    $email = sanitize_text_field($_POST['email']);
+                    $website = sanitize_text_field($_POST['website']);
+                    $content = sanitize_text_field($_POST['content']);
+                    $categories_existantes = $_POST['categories_existantes'];
+                    $nouvelles_categories = sanitize_text_field($_POST['nouvelles_categories']);
+    
+                    // Mettre à jour les données du client dans la base de données
+                    $nouvelles_donnees_client = array(
+                        'ID' => $client_id,
+                        'post_title' => $raison_sociale,
+                    );
+                    wp_update_post($nouvelles_donnees_client);
+                    update_post_meta($client_id, 'raison_sociale', $raison_sociale);
+                    update_post_meta($client_id, 'dirigeant', $dirigeant);
+                    update_post_meta($client_id, 'adresse', $adresse);
+                    update_post_meta($client_id, 'phone', $phone);
+                    update_post_meta($client_id, 'email', $email);
+                    update_post_meta($client_id, 'website', $website);
+                    update_post_meta($client_id, 'content', $content);
+    
+                    // Mettre à jour les catégories du client
+                    if (!empty($categories_existantes)) {
+                        $categories_ids = array();
+                        foreach ($categories_existantes as $categorie) {
+                            $term_id = (int)$categorie;
+                            $categories_ids[] = $term_id;
+                        }
+                        wp_set_post_terms($client_id, $categories_ids, 'categorie_client');
+                    }
+    
+                    if (!empty($nouvelles_categories)) {
+                        $nouvelles_categories = explode(',', $nouvelles_categories);
+            
+                        foreach ($nouvelles_categories as $categorie) {
+                            $categorie = trim($categorie);
+            
+                            // Vérifier si la catégorie existe déjà
+                            $term_exists = term_exists($categorie, 'categorie_client');
+            
+                            if ($term_exists) {
+                                $term_id = $term_exists['term_id'];
+                            } else {
+                                // Si la catégorie n'existe pas, créez-la
+                                $new_term = wp_insert_term($categorie, 'categorie_client');
+                                if (!is_wp_error($new_term)) {
+                                    $term_id = $new_term['term_id'];
+                                }
+                            }
+            
+                            if (isset($term_id)) {
+                                $categories_ids[] = $term_id;
+                            }
+                        }
+            
+                        // Associez les nouvelles catégories au client
+                        wp_set_post_terms($client_id, $categories_ids, 'categorie_client');
+                    }
+    
+                    // Afficher un message de confirmation
+                    echo '<div class="updated"><p>Les modifications ont été enregistrées avec succès.</p></div>';
+                } else {
+
+            // Récupérer les données du client
+            $raison_sociale = get_post_meta($client_id, 'raison_sociale', true);
+            $dirigeant = get_post_meta($client_id, 'dirigeant', true);
+            $adresse = get_post_meta($client_id, 'adresse', true);
+            $phone = get_post_meta($client_id, 'phone', true);
+            $email = get_post_meta($client_id, 'email', true);
+            $website = get_post_meta($client_id, 'website', true);
+            $content = get_post_meta($client_id, 'content', true);
+            $categories_client = wp_get_post_terms($client_id, 'categorie_client', array('fields' => 'ids'));
+
+                // Récupérer toutes les catégories existantes
+            $categories_existantes = get_terms(array(
+                'taxonomy' => 'categorie_client',
+                'hide_empty' => false,
+            ));
+
+
+            // Afficher la page de modification
+            ?>
+            <div class="wrap">
+                <h2>Modifier un client</h2>
+                <form method="post">
+                    <label for="raison_sociale">Raison sociale :</label>
+                    <input type="text" name="raison_sociale" id="raison_sociale" value="<?php echo $raison_sociale; ?>">
+                    <br>
+                    <label for="dirigeant">Dirigeant :</label>
+                    <input type="text" name="dirigeant" id="dirigeant" value="<?php echo $dirigeant; ?>">
+                    <br>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse" value="<?php echo $adresse; ?>">
+                    <br>
+                    <label for="phone">Tel :</label>
+                    <input type="tel" name="phone" id="phone" value="<?php echo $phone; ?>">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" value="<?php echo $email; ?>">
+                    <br>
+                    <label for="website">Site web :</label>
+                    <input type="url" name="website" id="website" value="<?php echo $website; ?>">
+                    <br>
+                    <label for="content">Activité principale :</label>
+                    <textarea name="content" id="content" cols="30" rows="10"><?php echo $content; ?></textarea>
+                    <br>
+                    
+                    <label for="categories_existantes">Catégories :</label>
+<select name="categories_existantes[]" id="categories_existantes" multiple>
+    <?php
+    foreach ($categories_existantes as $categorie) {
+        $selected = in_array($categorie->term_id, $categories_client) ? 'selected="selected"' : ''; // Vérifiez si la catégorie est associée au client
+        echo '<option value="' . $categorie->term_id . '" ' . $selected . '>' . $categorie->name . '</option>';
+    }
+    ?>
+</select>
+<br>
+                                        </select>
+                                        <br>
+                    
+                                        <label for="nouvelles_categories">Nouvelles catégories (séparez par des virgules) :</label>
+                                        <input type="text" name="nouvelles_categories" id="nouvelles_categories">
+                    <input type="hidden" name="client_id" value="<?php echo $client_id; ?>">
+                    <input type="submit" name="modifier_client" value="Modifier le client">
+                </form>
+            </div>
+            <script>
+        const multiSelectWithoutCtr = ( elemSelector ) => {
+            let options = [].slice.call(document.querySelectorAll(`${elemSelector} option`));
+            options.forEach(function (element) {
+                element.addEventListener("mousedown", 
+                    function (e) {
+                        e.preventDefault();
+                        element.parentElement.focus();
+                        this.selected = !this.selected;
+                        return false;
+                    }, false );
+            });
+            }
+
+multiSelectWithoutCtr('#categories_existantes')
+    </script>
+
+            <?php
+        }
+    }
+}
+}
+
 
 function supprimer_client() {
     if (isset($_POST['client_id']) && is_numeric($_POST['client_id'])) {
