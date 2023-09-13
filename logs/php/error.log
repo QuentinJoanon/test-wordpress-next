@@ -1,0 +1,154 @@
+[04-Sep-2023 11:17:23 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[12-Sep-2023 08:49:11 UTC] PHP Warning:  Undefined array key "categories_existantes" in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 30
+[12-Sep-2023 09:31:07 UTC] PHP Fatal error:  Cannot redeclare get_delete_post_link() (previously declared in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/link-template.php:1557) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 205
+[12-Sep-2023 09:31:41 UTC] PHP Fatal error:  Cannot redeclare get_delete_post_link() (previously declared in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/link-template.php:1557) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 205
+[12-Sep-2023 09:31:41 UTC] PHP Fatal error:  Cannot redeclare get_delete_post_link() (previously declared in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/link-template.php:1557) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 205
+[12-Sep-2023 09:36:18 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php:194
+Stack trace:
+#0 /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/class-wp-hook.php(310): afficher_liste_clients('')
+#1 /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/quentin/Local Sites/test-wordpress-next/app/public/wp-admin/admin.php(259): do_action('fiches-clients_...')
+#4 {main}
+  thrown in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 194
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:11 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:12 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:12 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:12 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:13 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:13 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:14 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:15 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:16 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:16 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:16 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:16 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:19 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:19 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:29 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:29 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:29 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:29 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:30 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:30 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:30 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:30 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:34 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:34 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:34 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:34 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:46 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:49 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:49 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:50 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:50 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:50 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:50 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: ::1:9003 (from HTTP_X_FORWARDED_FOR HTTP header), localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:58 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:59 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:59 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:39:59 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:40:00 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:40:00 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:40:00 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 11:40:00 UTC] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port) :-(
+[12-Sep-2023 12:31:39 UTC] PHP Fatal error:  Cannot redeclare afficher_page_fiches_clients() (previously declared in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php:21) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 154
+[12-Sep-2023 12:43:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[12-Sep-2023 12:43:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:11:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:11:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:11:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:11:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:11:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:11:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:18:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:18:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:19:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:19:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:20:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1435
+[13-Sep-2023 08:20:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/script-loader.php:2838) in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-includes/pluggable.php on line 1438
+[13-Sep-2023 08:54:53 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:54:55 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:54:56 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:54:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:55:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:56:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:57:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 95
+[13-Sep-2023 08:58:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:08 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:09 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:14 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:16 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:16 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 08:59:17 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:18 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:22 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:24 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:24 UTC] Client ID: 
+[13-Sep-2023 09:00:29 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:29 UTC] Client ID: 
+[13-Sep-2023 09:00:29 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:35 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:41 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:41 UTC] Client ID: 
+[13-Sep-2023 09:00:55 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:00:57 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:28 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:38 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:38 UTC] Client ID: 
+[13-Sep-2023 09:01:38 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:41 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:41 UTC] Client ID: 
+[13-Sep-2023 09:01:41 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:47 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:01:47 UTC] Client ID: 
+[13-Sep-2023 09:02:47 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:03:47 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:03:47 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:03:51 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:03:59 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:04:38 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:04:38 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:04:53 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:04:54 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 09:05:07 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-config.php on line 96
+[13-Sep-2023 13:49:32 UTC] PHP Warning:  Undefined array key "modifier_client" in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 268
+[13-Sep-2023 13:49:32 UTC] PHP Warning:  foreach() argument must be of type array|object, bool given in /home/quentin/Local Sites/test-wordpress-next/app/public/wp-content/plugins/annuaire/annuaire.php on line 281
